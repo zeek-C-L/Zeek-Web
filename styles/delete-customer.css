@@ -1,0 +1,49 @@
+.outer-div{
+  width: 90%;
+  background-color: aqua;
+  justify-self: center;
+
+}
+.customer-list{
+  width: 90%;
+  height: 80%;
+  background-color: rgb(132, 209, 209);
+  justify-self: center;
+  padding-top: 1px;
+  padding: 5px;
+  overflow-x: auto;
+}
+.customer-list::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.customer-list-grid{
+  width: 150px;
+  background-color: aquamarine;
+  height: 170px;
+  padding: 5px;
+  float: left;
+  border: 1px solid rgb(77, 146, 98);
+  border-radius: 10px;
+  margin: 3px;
+}
+.customer-nav-grid{
+  background-color: rgb(162, 222, 235);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 89%;
+  padding: 9px;
+  border-bottom: solid rgb(115, 133, 188);
+  justify-self: center;
+}
+.customer-nav-grid button{
+  height: 30px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+.saveGrid{
+  display: flex;
+  justify-content: end;
+}

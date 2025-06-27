@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/add-customer.css">
+</head>
+<body>
+  <div class="customerGrid">
+    <div class="customer-nav-grid">
+      <div>
+        <button onclick="
+          window.location.href = 'index.html'">🔙</button>
+      </div>
+      <div class="saveGrid">
+        <button onclick="
+          updateCustomer();
+          ">✔️</button>
+      </div>
+    </div>
+    <br>
+    <div class="customerInput">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="name">
+      <label for="address">Address</label>
+      <input id="address" type="text" placeholder="address">
+      <label for="amount">Amount</label>
+      <input id="amount" type="number" placeholder="enter an amount">
+      <label for="Times-Pay">Times</label>
+      <select name="Times" id="Times-Pay">
+        <option value="1">1-X</option>
+        <option value="2">2-X</option>
+        <option value="3">3-X</option>
+        <option value="4">4-X</option>
+        <option value="5">5-X</option>
+        <option value="6">6-X</option>
+      </select><br>
+      <label for="discript">Discript:</label>
+      <input class="discript" id="discript" type="text" placeholder="discript">
+    </div>
+  </div>
+  <script type="module" src="script/add-customer.js"></script>
+</body>
+</html>
